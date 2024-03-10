@@ -42,7 +42,7 @@
   }
 
   .button:hover {
-    background-color: #5f73aa;
+    background-color: #7538b6;
   }
 </style>
 </head>
@@ -55,11 +55,15 @@
     FlashSystem is under development by AmtiXDev & MohaDev69. Stay tuned for the upcoming website and dashboard. In the meantime, feel free to invite the FlashSystem bot to your Discord server!
   </p>
   <button class="button" onclick="redirectToDiscord()">Invite FlashSystem</button>
+  <button class="button" onclick="redirectToDiscordServer()">Join Support Server</button>
 </div>
 
 <script>
   function redirectToDiscord() {
     window.location.href = 'https://discord.com/api/oauth2/authorize?client_id=781294735167193099&permissions=8&scope=applications.commands%20bot';
+  }
+  function redirectToDiscordServer() {
+    window.location.href = 'https://discord.gg/Y5knmJDXYm';
   }
 </script>
 </body>
