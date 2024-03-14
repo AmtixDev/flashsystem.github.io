@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flashsystem.xyz/api</title>
+  <style>
+    {
+      "#error-container": {
+        "text-align": "center",
+        "margin-top": "100px",
+        "background-color": "#616161"
+      },
+      "#error-message": {
+        "color": "#f28b54",
+        "font-size": "24px"
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="error-container">
+    <p id="error-message">The requested resource was not found on this server</p>
+  </div>
+
+  <script>
+    var errorMessage = `
+{
+   "error": "The requested resource was not found on this server /"
+}`;
+    document.getElementById("error-message").textContent = errorMessage;
+  </script>
+</body>
+</html>
